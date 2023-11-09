@@ -25,7 +25,7 @@ const app = express()
 const cors = require("cors")
 const bodyParser = require('body-parser')
 const fs = require('fs-extra')
-
+app.use("/uploads", express.static("uploads"))
 app.use(cors())
 const multer = require('multer')
 
